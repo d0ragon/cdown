@@ -1,6 +1,4 @@
 
-// start & end arguments must be in seconds
-
 $.prototype.cdown = function (options)
 {
   var cdown =
@@ -108,7 +106,7 @@ $.prototype.cdown = function (options)
           '</div>';
 
       cdown.element.html(html);
-      cdown.children = cdown.element.find('.cdown_days, .cdown_hours, .cdown_minutes, .cdown_seconds');
+      cdown.children = cdown.element.find('.cdown_number');
     }
   }
 
