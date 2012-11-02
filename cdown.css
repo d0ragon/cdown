@@ -1,0 +1,49 @@
+/* basic clearfix class */
+.clear:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+* html .clear             { zoom: 1; } /* IE6 */
+*:first-child+html .clear { zoom: 1; } /* IE7 */
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #eee;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#countdown {
+  text-align: center;
+  margin: 30px;
+  background: rgba(0, 178, 0, 1);
+  border-radius: 3px;
+  box-shadow: 2px 2px #006600;
+  font: bold 40px Menlo,Monaco,Consolas,"Courier New",monospace;
+  color: #fff;
+  padding: 10px;
+}
+
+.cdown_p, .cdown_colon {
+  float: left;
+  text-align: center;
+}
+
+.cdown_p {
+}
+
+.cdown_colon {
+}
+
+.cdown_p > .cdown_number {
+}
+
+.cdown_p > .cdown_define {
+  display: none;
+}
