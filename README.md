@@ -35,7 +35,12 @@ or
 ```javascript
 Math.round(new Date().getTime() / 1000)
 ```
-(because new Date().getTime() returns time in milliseconds).
+because new Date().getTime() returns time in milliseconds.  
+You can also get the seconds with unary operator:
+```javascript
+start = + new Date()
+```
+`+ new Date()` is equal to `new Date().getTime()`
 
 * __end__: End date. Javascript date object or time in seconds.  
 For example, if you want the end date to be 13:00 February 3, 2013, you should create a date object according to this:
@@ -54,8 +59,8 @@ end = Math.round(end.getTime() / 1000);
 
 ## Optional Properties
 
-* __use_plain_text__: boolean  
-If set to true, innerHTML of the countdown element will be only text, no html tags, e.g. '10:02:03:06'.  
+* __use_plain_text__: `boolean`  
+If set to true, innerHTML of the countdown element will be only text, no html tags, e.g. `10:02:03:06`.  
 If set to false, countdown function will use a template with tags for custom styling:
 ```html
 <div class="cdown_p">
@@ -80,8 +85,8 @@ If set to false, countdown function will use a template with tags for custom sty
 ```
 
 * __labels__: an object with 4 properties: days, hours, minutes & seconds.  
-If you want to have labels under numbers, you can set the values for them with this option. But if __use_plain_text__ property is set to _true_, this won't work, of course.  
-Also, if you want to use the template but you don't want to have the labels, you can set the _display: none_ property for _.cdown_define_ class.
+If you want to have labels under numbers, you can set the values for them with this option. But if `use_plain_text` property is set to `true`, this won't work, of course.  
+Also, if you want to use the template but you don't want to have the labels, you can set the `display: none` property for `.cdown_define` class.
 ```css
 .cdown_define {
       display: none;
