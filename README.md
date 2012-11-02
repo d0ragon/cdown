@@ -1,5 +1,7 @@
 # CDown v1.0
 
+* https://github.com/vazha-asatiani/cdown
+
 # DESCRIPTION
 
 CDown is a lightweight countdown based on javascript & jQuery.
