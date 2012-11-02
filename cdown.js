@@ -89,22 +89,22 @@ $.prototype.cdown = function (options)
       var html =
           '<div class="cdown_p">' +
           '  <div class="cdown_number cdown_days">00</div>' +
-          '  <div class="cdown_define">' + cdown.options.labels.days + '</div>' +
+          '  <div class="cdown_label">' + cdown.options.labels.days + '</div>' +
           '</div>' +
           '<span class="cdown_colon">:</span>' +
           '<div class="cdown_p">' +
           '  <div class="cdown_number cdown_hours">00</div>' +
-          '  <div class="cdown_define">' + cdown.options.labels.hours + '</div>' +
+          '  <div class="cdown_label">' + cdown.options.labels.hours + '</div>' +
           '</div>' +
           '<span class="cdown_colon">:</span>' +
           '<div class="cdown_p">' +
           '  <div class="cdown_number cdown_minutes">00</div>' +
-          '  <div class="cdown_define">' + cdown.options.labels.minutes + '</div>' +
+          '  <div class="cdown_label">' + cdown.options.labels.minutes + '</div>' +
           '</div>' +
           '<span class="cdown_colon">:</span>' +
           '<div class="cdown_p">' +
           '  <div class="cdown_number cdown_seconds">00</div>' +
-          '  <div class="cdown_define">' + cdown.options.labels.seconds + '</div>' +
+          '  <div class="cdown_label">' + cdown.options.labels.seconds + '</div>' +
           '</div>';
 
       cdown.element.html(html);

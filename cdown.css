@@ -44,6 +44,7 @@ body {
 .cdown_p > .cdown_number {
 }
 
-.cdown_p > .cdown_define {
+.cdown_p > .cdown_label {
+  font-size: 15px;
   display: none;
 }
