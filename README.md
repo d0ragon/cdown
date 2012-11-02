@@ -61,7 +61,8 @@ end = Math.round(end.getTime() / 1000);
 
 * __use_plain_text__: `boolean`  
 If set to true, innerHTML of the countdown element will be only text, no html tags, e.g. `10:02:03:06`.  
-If set to false, countdown function will use a template with tags for custom styling:
+If set to false, countdown function will use a template with tags as  innerHTML.  
+This allows more advanced styling.
 ```html
 <div class="cdown_p">
       <div class="cdown_number cdown_days">00</div>
