@@ -1,10 +1,10 @@
-# CDown v1.0
+# CDown v1.1
 
 * https://github.com/vazha-asatiani/cdown
 
 # DESCRIPTION
 
-CDown is a lightweight countdown based on javascript & jQuery.
+This is a plain javascript version of the countdown.
 
 
 # INSTALL
@@ -14,9 +14,13 @@ Just download and include cdown.js file.
 
 # USAGE
 
-You just need to select an element with jQuery and then run cdown, e.g.
+You just need to select an element and then run cdown, e.g.
 ```javascript
-$('#myid').cdown(options);
+document.getElementById('myid').cdown(options);
+```
+or
+```javascript
+$('#myid').get(0).cdown(options);
 ```
 
 
@@ -110,5 +114,5 @@ var cdown_options =
       },
       use_plain_text: false
 };
-$('#myid').cdown(cdown_options);
+document.getElementById('myid').cdown(cdown_options);
 ```

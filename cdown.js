@@ -1,7 +1,5 @@
 
-// start & end arguments must be in seconds
-
-$.prototype.cdown = function (options)
+Element.prototype.cdown = function (options)
 {
   var cdown =
   {
@@ -17,7 +15,7 @@ $.prototype.cdown = function (options)
     minutes: 'Minutes',
     seconds: 'Seconds'
   };
-  
+
   cdown.runtime = cdown.math.round(+ new Date() / 1000);
 
   var d = {start: cdown.options.start, end: cdown.options.end};
@@ -82,7 +80,7 @@ $.prototype.cdown = function (options)
     if (cdown.options.use_plain_text)
     {
       var html = '00:00:00:00';
-      cdown.element.html(html);
+      cdown.element.innnerHTML = html;
     }
     else
     {
@@ -107,8 +105,8 @@ $.prototype.cdown = function (options)
           '  <div class="cdown_label">' + cdown.options.labels.seconds + '</div>' +
           '</div>';
 
-      cdown.element.html(html);
-      cdown.children = cdown.element.find('.cdown_days, .cdown_hours, .cdown_minutes, .cdown_seconds');
+      cdown.element.innnerHTML = html;
+      cdown.children = cdown.element.getElementsByClassName('cdown_number');
     }
   }
 
@@ -122,14 +120,14 @@ $.prototype.cdown = function (options)
     if (cdown.options.use_plain_text)
     {
       var html = intervals.days + ':' + intervals.hours + ':' + intervals.minutes + ':' + intervals.seconds; 
-      cdown.element.html(html);
+      cdown.element.innerHTML = html;
     }
     else
     {
-      cdown.children.each(function ()
+      for (i = 0, num = cdown.children.length; i < num; i ++)
       {
-        var t = $(this);
-        var classes = t[0].className.split(' ');
+        var t = cdown.children[i];
+        var classes = t.className.split(' ');
         for (i in classes)
         {
           if (classes[i] == 'cdown_number')
@@ -141,8 +139,8 @@ $.prototype.cdown = function (options)
             var index = classes[i].slice(6);
           }
         }
-        t.html(intervals[index]);
-      });
+        t.innerHTML = intervals[index];
+      }
     }
 
     setTimeout(cdown.update, 999);

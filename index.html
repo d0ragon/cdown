@@ -14,7 +14,6 @@
 
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="cdown.js"></script>
   <script>
 
@@ -29,10 +28,10 @@
         minutes: 'Minuter',
         seconds: 'Sekunder'
       },
-      use_plain_text: false
+      use_plain_text: true
     };
 
-    $('#countdown').cdown(cdown_options);
+    document.getElementById('countdown').cdown(cdown_options);
 
   </script>
 
