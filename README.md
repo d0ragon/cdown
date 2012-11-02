@@ -1,10 +1,10 @@
 # CDown v1.1
 
-* https://github.com/vazha-asatiani/cdown
+* https://github.com/vazha-asatiani/cdown/tree/plain_js
 
 # DESCRIPTION
 
-This is a plain javascript version of the countdown.
+This is a plain javascript version of the lightweight countdown.
 
 
 # INSTALL
