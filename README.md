@@ -112,3 +112,5 @@ var cdown_options =
 };
 $('#myid').cdown(cdown_options);
 ```
+##### License
+[WTFPL](http://www.wtfpl.net/ "Do What the Fuck You Want to Public License")
